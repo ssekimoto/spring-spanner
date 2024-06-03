@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Sample</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div th:replace="~{components/Header :: header}"></div>
+    <main>
+        <div th:replace="~{components/CustomerList :: customerList}"></div>
+        <div th:replace="~{components/CreateCustomerForm :: createCustomerForm}"></div>
+        <div th:replace="~{components/OrderCoffeeForm :: orderCoffeeForm}"></div>
+        <div th:replace="~{components/DeleteCustomerForm :: deleteCustomerForm}"></div>
+        <div th:if="${message}" th:replace="~{components/Message :: message}"></div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Coffee Shop Sample</p>
+    </footer>
+</body>
+</html>

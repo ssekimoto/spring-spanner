@@ -1,0 +1,6 @@
+model/Coffee.class
+com/example/CoffeeApplication.class
+com/example/WebController.class
+model/CoffeeRepository.class
+model/Customer.class
+model/CustomerRepository.class
